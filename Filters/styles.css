@@ -1,0 +1,27 @@
+body{
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: Arial;
+	font-weight: bold;
+}
+h1{
+	margin: 100px;
+}
+div{
+	border: 5px solid white;
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#filterInput{
+	border: 5px solid white;
+	padding: 20px;
+	padding: 10px;
+	
+}

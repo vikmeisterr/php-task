@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Review Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Review Filter</h1>
+  <div>
+  <form id="filterForm" method="post" action="filter.php">
+    <label for="textFilter">Prioritize by text:</label>
+    <select name="textFilter" id="textFilter">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+    <br>
+    <label for="ratingOrder">Order by Rating:</label>
+    <select name="ratingOrder" id="ratingOrder">
+      <option value="highest">Highest First</option>
+      <option value="lowest">Lowest First</option>
+    </select>
+    <br>
+    <label for="dateOrder">Order by Date:</label>
+    <select name="dateOrder" id="dateOrder">
+      <option value="newest">Newest First</option>
+      <option value="oldest">Oldest First</option>
+    </select>
+    <br>
+    <label for="minRating">Minimum rating:</label>
+    <select name="minRating" id="minRating">
+      <option value="5">5</option>
+      <option value="4">4</option>
+      <option value="3">3</option>
+      <option value="2">2</option>
+      <option value="1">1</option>
+    </select>
+	</div>
+	<div id = "filterInput">
+    <input type="submit" id="submitbtn" name="submitbtn" value="Filter">
+  </form>
+  <table id="reviewTable">
+  </table>
+  </div>
+</body>
+</html>
